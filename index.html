@@ -5,28 +5,76 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Ozark Shed Co.</title>
     <style>
+        @import url('https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap');
+        
         body {
             font-family: 'Merriweather', serif;
             background-color: #2E2E2E;
             color: #EAEAEA;
             text-align: center;
             padding: 50px;
+            margin: 0;
         }
         .container {
-            max-width: 800px;
+            max-width: 900px;
             margin: auto;
+            background: rgba(0, 0, 0, 0.6);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
         }
         .logo img {
-            max-width: 100%;
+            max-width: 300px;
             height: auto;
+            animation: fadeIn 2s ease-in-out;
         }
         .title {
-            font-size: 2em;
+            font-size: 2.5em;
+            font-weight: 700;
             margin-top: 20px;
         }
         .description {
-            font-size: 1.2em;
+            font-size: 1.3em;
             margin-top: 10px;
+            font-weight: 300;
+        }
+        .button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 15px 30px;
+            background: #5A3E2B;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 8px;
+            transition: background 0.3s ease;
+        }
+        .button:hover {
+            background: #7A523B;
+        }
+        .footer {
+            margin-top: 30px;
+            font-size: 0.9em;
+            opacity: 0.7;
+        }
+        .social-icons {
+            margin-top: 20px;
+        }
+        .social-icons a {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+            transition: transform 0.3s ease;
+        }
+        .social-icons img:hover {
+            transform: scale(1.1);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
         }
     </style>
 </head>
@@ -36,7 +84,12 @@
             <img src="images/logo.gif" alt="Ozark Shed Co. Logo">
         </div>
         <div class="title">Welcome to Ozark Shed Co.</div>
-        <div class="description">Rent-to-own sheds, playhouses, greenhouses, and more.<br>Located at 636 Berry Rd, Bonne Terre, MO 63628.</div>
+        <div class="description">High-quality rent-to-own sheds, playhouses, greenhouses, and more.</div>
+        <a href="https://goo.gl/maps/XJ6n8R8pDhB2" target="_blank" class="button">📍 Find Us on Google Maps</a>
+        <div class="social-icons">
+            <a href="#" target="_blank"><img src="images/Facebook-Icon.png" alt="Facebook"></a>
+        </div>
+        <div class="footer">© 2025 Ozark Shed Co. |</div>
     </div>
 </body>
 </html>
